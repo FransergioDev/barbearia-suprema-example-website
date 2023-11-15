@@ -1,0 +1,103 @@
+@import '../../vars.css';
+
+.navbar {
+    top:0;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    padding-top: 1em;
+    padding-left: 1.2em !important;
+    padding-right: 1.2em !important;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: right;
+    justify-content: flex-end;
+    color: var(--main-text-color);
+}
+
+.navbar .nav-link {
+    cursor: pointer;
+    text-align: right;
+    padding-right: 6em;
+}
+
+.navbar .navbar-brand {
+    margin-left: 4em;
+    font-size: 1.4em;
+    color: var(--main-text-color);
+}
+.navbar .navbar-brand:hover {
+    color: var(--secondary-text-color);
+}
+
+.navbar .navbar-toggler {
+    position: relative;
+    color: var(--main-text-color);
+    border: 1px solid;
+    border-color: var(--main-text-color);
+}
+
+.navbar .navbar-toggler:hover, .navbar .navbar-toggler:active, .navbar .navbar-toggler:focus{
+    box-shadow: none !important;
+    color: var(--secondary-text-color);
+}
+
+.navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus {
+    border-color: var(--secondary-text-color);
+}
+
+.navbar .nav-link {
+    color: var(--main-text-color);
+    padding: 0.6em;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar .nav-link:hover {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.navbar .nav-link.active {
+    color: var(--secondary-text-color) !important;
+}
+
+@media screen and (max-width: 990px) {
+
+    .navbar {
+        background-color: #595858c2 !important;
+    }
+
+    .navbar-brand {
+        margin-left: 0 !important;
+    }
+
+    .navbar-collapse.show {
+        top: 3.7em;
+        width: 100%;
+        right: 0;
+        position: absolute;
+        text-align: left;
+        overflow: hidden;
+        background-color: #595858c2;
+        border-radius: 0 0em 1em 1em;
+    }
+
+    .navbar-toggler-icon{
+        background-image: var(--toggle-icon) !important;
+    }
+    .navbar .navbar-toggler:hover .navbar-toggler-icon, .navbar .navbar-toggler:active .navbar-toggler-icon{
+        background-image: var(--toggle-icon-secondary) !important;
+    }
+
+    .navbar-collapse.show .nav-link {
+        text-align: left;
+        padding-left: 2em;
+    }
+    
+    .navbar-collapse.show .nav-link:hover {
+        background-color: #656565ea;
+    }
+}

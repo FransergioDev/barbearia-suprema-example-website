@@ -1,0 +1,12 @@
+:root {
+    --main-bg-color: rgb(247, 222, 0);
+    --secondary-text-color: rgb(109, 98, 0), 0.836;
+
+    --main-text-color: #FFF;
+    --secondary-text-color: rgb(247, 222, 0);
+    --tertiary-text-color: rgb(109, 89, 0);
+
+
+    --toggle-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath  stroke='rgba(255,255,255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --toggle-icon-secondary: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath  stroke='rgb(247, 222, 0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

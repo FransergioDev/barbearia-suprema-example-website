@@ -1,0 +1,105 @@
+@import 'reset.css';
+@import 'vars.css';
+
+/**
+    cores: rgb(247, 222, 0), #FFF, #000
+*/
+
+main {
+  padding: 0 !important;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.box-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  background-color: #000;
+  background-image: url('/images/fundo.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.box-main {
+  z-index: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 1.2em 6.5em 2em 6.5em;
+}
+
+.container-fluid, main {
+  height: 100%;
+  min-height: 100%;
+}
+
+section {
+  padding-top: 1vh;
+  margin-left: 0.2em;
+  padding-bottom: 0.5vh;
+}
+
+.servicos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section .card {
+  overflow: hidden;
+  margin: 10px;
+  width: 50vh;
+}
+
+.page-servicos, .page-quem-somos, .page-contato{
+  color: var(--main-text-color);
+}
+
+.page-quem-somos, .page-contato{
+  margin-top: 4vh;
+  padding-top: 1vh;
+  border-radius: 1em;
+  background-color: #595858c2;
+}
+
+@media screen and (max-width: 1265px) {
+  section .card {
+    width: 42vh;
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  section .card {
+    width: 32vh;
+  }
+  .box-main {
+    padding: 1.2em 2.5em 8em 2.5em;
+  }
+  section {
+    margin-left: 0em;
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .box-main {
+    padding: 1.2em .5em 8em .5em;
+  }
+  section {
+    margin-left: 0em;
+    font-size: 80%;
+  }
+  section .card {
+    width: 100vh;
+  }
+  section h1 {
+    text-align: center;
+  }
+}
+
